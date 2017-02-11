@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MedWik.Seach.Tests
+namespace MedWik.Search.Tests
 {
     [TestClass]
     public class UnitTest1

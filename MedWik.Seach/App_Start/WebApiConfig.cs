@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace MedWik.Seach
+namespace MedWik.Search
 {
     public static class WebApiConfig
     {
