@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MedWik.Seach\MedWik.Search.csproj">
+    <ProjectReference Include="..\MedWik.Search\MedWik.Search.csproj">
       <Project>{39163386-1235-41D1-97AF-236E5E891B53}</Project>
       <Name>MedWik.Search</Name>
     </ProjectReference>
