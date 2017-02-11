@@ -86,6 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Entity\DiseaseProfileEntity.cs" />
+    <Compile Include="Entity\PatientProfileEntity.cs" />
+    <Compile Include="Entity\ProfileEntity.cs" />
     <Compile Include="Entity\SearchEntity.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

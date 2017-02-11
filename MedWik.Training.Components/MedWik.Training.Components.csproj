@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{39163386-1235-41D1-97AF-236E5E891B53}</ProjectGuid>
+    <ProjectGuid>{7A0D617C-D4D3-4514-B9D5-8FB6CFB9A095}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MedWik.Search</RootNamespace>
-    <AssemblyName>MedWik.Search</AssemblyName>
+    <RootNamespace>MedWik.Training.Components</RootNamespace>
+    <AssemblyName>MedWik.Training.Components</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -99,9 +99,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Helpers\ApiClient.cs" />
+    <Compile Include="Controllers\RedisController.cs" />
+    <Compile Include="Controllers\ResourceExtractController.cs" />
+    <Compile Include="Entity\Resource\Category.cs" />
+    <Compile Include="Entity\Resource\Concepts.cs" />
+    <Compile Include="Entity\Resource\EntityProperty.cs" />
+    <Compile Include="Entity\Resource\KeyWords.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Entity\ResourceEntity.cs" />
+    <Compile Include="Model\RedisConnection  .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,8 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -131,9 +138,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50565</DevelopmentServerPort>
+          <DevelopmentServerPort>54022</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50565/</IISUrl>
+          <IISUrl>http://localhost:54022/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
