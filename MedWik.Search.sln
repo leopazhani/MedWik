@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedWik.Search", "MedWik.Sea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedWik.Search.Tests", "MedWik.Seach.Tests\MedWik.Search.Tests.csproj", "{17C3CDFE-63FA-45FF-BF7A-59F0C70DDBC9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MedWikLayer", "MedWikLayer", "{9D4BE640-0140-4EB7-8FC6-02E789FDEBB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedWik.Search.Shared", "MedWik.Search.Shared\MedWik.Search.Shared.csproj", "{2250FEE6-1BF3-4278-BAB0-4855C2CCC10C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedWik.Search.Implementation", "MedWik.Search.Implementation\MedWik.Search.Implementation.csproj", "{6DB89BBA-F2E2-433A-9937-3CB2D6CD3512}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,20 @@ Global
 		{17C3CDFE-63FA-45FF-BF7A-59F0C70DDBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C3CDFE-63FA-45FF-BF7A-59F0C70DDBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C3CDFE-63FA-45FF-BF7A-59F0C70DDBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2250FEE6-1BF3-4278-BAB0-4855C2CCC10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2250FEE6-1BF3-4278-BAB0-4855C2CCC10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2250FEE6-1BF3-4278-BAB0-4855C2CCC10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2250FEE6-1BF3-4278-BAB0-4855C2CCC10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB89BBA-F2E2-433A-9937-3CB2D6CD3512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB89BBA-F2E2-433A-9937-3CB2D6CD3512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB89BBA-F2E2-433A-9937-3CB2D6CD3512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB89BBA-F2E2-433A-9937-3CB2D6CD3512}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2250FEE6-1BF3-4278-BAB0-4855C2CCC10C} = {9D4BE640-0140-4EB7-8FC6-02E789FDEBB1}
+		{6DB89BBA-F2E2-433A-9937-3CB2D6CD3512} = {9D4BE640-0140-4EB7-8FC6-02E789FDEBB1}
 	EndGlobalSection
 EndGlobal
