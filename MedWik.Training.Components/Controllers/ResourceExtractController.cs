@@ -16,10 +16,8 @@ namespace MedWik.Training.Components.Controllers
         public async Task<ResourceEntity> ExtractFromWebsite(string urlString)
         {
             //PageMeta Api : "https://api.pagemeta.io/v1/"
-
-            string apiURL = "https://api.pagemeta.io/";
-            string apiPath = "v1/?page="+urlString;
-            ResourceEntity resource = await ApiClient.GetApi(apiURL,apiPath).ConfigureAwait(false);
+           
+            ResourceEntity resource = await ApiClient.GetApi(urlString).ConfigureAwait(false);
             if (resource == null)
             {
                 return null;
@@ -36,14 +34,25 @@ namespace MedWik.Training.Components.Controllers
         //    }
         //    return Ok(product);
         //}
-        //public IHttpActionResult ExtractFromImage(int id)
-        //{
-        //    var product = products.FirstOrDefault((p) => p.Id == id);
-        //    if (product == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(product);
-        //}
+
+        ////public IHttpActionResult ExtractFromMedia(int id)
+        ////{
+        ////    var product = products.FirstOrDefault((p) => p.Id == id);
+        ////    if (product == null)
+        ////    {
+        ////        return NotFound();
+        ////    }
+        ////    return Ok(product);
+        ////}
+
+        public async Task<IHttpActionResult> ExtractFromImage(string imgURL)
+        {
+            ResourceEntity resource= await ApiClient.GetApi1(imgURL).ConfigureAwait(false);
+            if (resource == null)
+            {
+                return NotFound();
+            }
+            return Ok(resource);
+        }
     }
 }

@@ -11,25 +11,27 @@ namespace MedWik.Training.Components.Controllers
 {
     public class RedisController : ApiController
     {
-        RedisConnection obj = new RedisConnection();
-        public string GetDatetime()
-        {
-            string datetime = "";
-            //Creating Redis database instance  
-            IDatabase db = obj.Connection.GetDatabase();
+        //RedisConnection obj = new RedisConnection();
 
-            //Getting value of "datetime" key  
-            datetime = db.StringGet("datetime");
+        //public ResourceEntity
+        //public string GetDatetime()
+        //{
+        //    string datetime = "";
+        //    //Creating Redis database instance  
+        //    IDatabase db = obj.Connection.GetDatabase();
 
-            //If key not found in Redis database  
-            if (datetime == null)
-            {
-                datetime = Convert.ToString(DateTime.Now);
+        //    //Getting value of "datetime" key  
+        //    datetime = db.StringGet("datetime");
 
-                //Setting value for key with Expiry time of 5 Minutes  
-                db.StringSet("datetime", datetime, TimeSpan.FromMinutes(5));
-            }
-            return datetime;
-        }
+        //    //If key not found in Redis database  
+        //    if (datetime == null)
+        //    {
+        //        datetime = Convert.ToString(DateTime.Now);
+
+        //        //Setting value for key with Expiry time of 5 Minutes  
+        //        db.StringSet("datetime", datetime, TimeSpan.FromMinutes(5));
+        //    }
+        //    return datetime;
+        //}
     }
 }

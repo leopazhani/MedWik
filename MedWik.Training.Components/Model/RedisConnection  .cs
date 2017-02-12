@@ -8,22 +8,22 @@ namespace MedWik.Training.Components.Model
 {
     public class RedisConnection
     {
-         static RedisConnection()
-        {
-            RedisConnection.lazyConnection = new Lazy<ConnectionMultiplexer>(() =>
-            {
-                return ConnectionMultiplexer.Connect("localhost");
-            });
-        }
+        // static RedisConnection()
+        //{
+        //    RedisConnection.lazyConnection = new Lazy<ConnectionMultiplexer>(() =>
+        //    {
+        //        return ConnectionMultiplexer.Connect("localhost");
+        //    });
+        //}
 
-        private static Lazy<ConnectionMultiplexer> lazyConnection;
+        //private static Lazy<ConnectionMultiplexer> lazyConnection;
 
-        public ConnectionMultiplexer Connection
-        {
-            get
-            {
-                return lazyConnection.Value;
-            }
-        }
+        //public ConnectionMultiplexer Connection
+        //{
+        //    get
+        //    {
+        //        return lazyConnection.Value;
+        //    }
+        //}
     }
 }
