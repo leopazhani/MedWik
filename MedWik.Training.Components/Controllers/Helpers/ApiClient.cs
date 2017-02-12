@@ -12,7 +12,7 @@ namespace MedWik.Training.Components.Controllers.Helpers
 {
     public static class ApiClient
     {
-        public static async Task<ResourceEntity> GetApi(string urlString)
+        public static async Task<ResourceEntity> GetWebSiteResource(string urlString)
         {
             TrainingMetadata metaDataEntity = new TrainingMetadata();
             TrainingData trainingDataEntity = new TrainingData();
@@ -53,7 +53,7 @@ namespace MedWik.Training.Components.Controllers.Helpers
             return EntityHelper.GetResourceEntity(trainingDataEntity, metaDataEntity);
         }
 
-        public static async Task<ResourceEntity> GetApi1(string urlString)
+        public static async Task<ResourceEntity> GetImageResource(string urlString)
         {
             ResourceEntity resourceEntity = new ResourceEntity();
             var client = new HttpClient();
@@ -77,6 +77,12 @@ namespace MedWik.Training.Components.Controllers.Helpers
             }
 
             return resourceEntity;
+        }
+
+        public static async Task<ResourceEntity> GetMediaResource(string file)
+        {
+            ResourceEntity entity = new ResourceEntity();
+            return entity;
         }
     }
 }
